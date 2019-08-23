@@ -30,7 +30,11 @@ public class FizzBuzzNumGame {
      */
     public String fizzBuzz(int num) {
         // TODO Auto-generated method stub
-        if(num%3==0) {
+        if (num%3==0&&num%5==0&&num%7==0) {
+            return "FizzBuzzWhizz";
+        }else if ((num%3==0&&num%5==0)||(num%3==0&&num%7==0)||(num%5==0&&num%5==0)) {
+            return "FizzBuzz";
+        }else if(num%3==0) {
             return "Fizz";
         }else if(num%5==0) {
             return "FizzBuzz";

@@ -90,6 +90,22 @@ public class FizzBuzzNumGameTest {
 
         //then
         Assertions.assertEquals(expected, actual);
+    }
+    
+    @Test
+    public void should_return_FizzBuzz_when_FizzBuzzNumGame_give_15() {
+        //given
+        int num = 15;
+        String expected = "FizzBuzz";
+        String actual;
+        
+        //when
+        FizzBuzzNumGame fizzBuzzNumGame = new FizzBuzzNumGame();
+        actual = fizzBuzzNumGame.fizzBuzz(num);
+        
+        //then
+        Assertions.assertEquals(expected, actual);
+        
         
     }
 
